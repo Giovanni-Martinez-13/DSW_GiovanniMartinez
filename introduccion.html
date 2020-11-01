@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>introducción CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+  <meta dexription="Estilos internos y Externos">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+<!--   <div class="container"> -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#" style="color: #ffff">
+    <img src="img/logocss3.png" width="50" height="50" alt="CSS3" style="border-radius: 100%;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html" style="color: #ffff">Inicio <span class="sr-only">(current)</span></a>
+        </li>
+
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #ffff">
+            Conceptos
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="introduccion.html">Introducción</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="selectores.html">Selectores</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="unidades_medida.html" >Unidades de medida y colores</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="posicionamiento_visualizacion.html" >Posicionamiento y visualización</a>
+           <!-- <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="css_avanzado.html">CSS Avanzado</a>-->
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #ffff">
+            Recursos
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="multimedia.html">Multimedia</a>        
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="ejemplo.html">Ejemplo</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="bibliografia.html">Bibliografia</a>
+          </div>
+        </li>
+        
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #ffff">
+            Autoevaluación
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href=""></a>
+          </div>
+        </li>
+       <li class="nav-item">
+        <a class="nav-link" href="autor.html" style="color: #ffff">Autor</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.unad.edu.co/" target="_blanck" style="color: #ffff">
+        <div style="text-align: right;"><img src="img/logoUNAD.png"></div></a>
+        </li>
+      </ul>
+      <!-- <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+      </form> -->
+    </div>
+  </nav>
+<div class="container">
+<h5 class="text-primary">¿Qué es CSS?</h5>
+       <h6>Cascading Style Sheets –  Hojas de Estilo en Cascada.</h6>
+    <p>es un lenguaje de programación de formato o código abierto que se usa para controlar el aspecto o presentación de
+    los documentos electrónicos definidos con HTML y XHTML, es decir, que se encarga del diseño gráfico.
+    Además, mejora la accesibilidad del documento, reduce la complejidad de su mantenimiento y permite
+    visualizar el mismo documento en infinidad de dispositivos diferentes.</p>
+    <h6> Incluir CSS en el mismo documento HTML (CSS interno)</h6>
+    <p>Los estilos se definen en una zona específica del propio documento HTML. Se emplea la
+     etiqueta style de HTML y solamente se pueden incluir en la cabecera del documento
+    (sólo dentro de la sección head) como se ve en la siguiente imágen.</p>
+    <img src="img/incluircss.PNG" alt="Incluir css en el mismo archivo HTML" title="Incluir css en archivo HTML" class="img">
+    <h6 >Definir CSS en un archivo externo (CSS Externo)</h6>
+    <p>Se guarda el archivo de texto con el nombre estilos.css Se debe poner especial
+        atención a que el archivo tenga extensión .css  y en la página HTML se enlaza el archivo CSS externo mediante la etiqueta link como se ve en la siguinete imágen.</p>
+    <p> Atributos utilizados para enlazar el archivo CSS.<br>
+       <span>rel:</span>  indica el tipo de relación que tiene el recurso enlazado (en este caso, el
+        archivo CSS) y la página HTML. Para los archivos CSS, se utiliza el valor
+        stylesheet. <br>
+        <span>type:</span> indica el tipo de recurso enlazado. Sus valores están estandarizados y para
+       los archivos CSS su valor siempre es text/css <br>
+       <span> href:</span> indica la URL del archivo CSS que contiene los estilos. La URL indicada puede
+       ser relativa o absoluta y puede apuntar a un recurso interno o externo al sitio web.<br>
+       <span> media:</span> indica el medio en el que se van a aplicar los estilos del archivo CSS</p>
+    <img src="img/incluircssexterno.PNG" alt="Incluir css desde un archivo externo" class="img">
+<h6> Incluir CSS en los elementos HTML (CSS Inline)</h6>
+<P>Esta ultima forma de incluir CSS directamente en los elementos HTML solo se recomienda 
+    determinadas situaciones en las que se debe incluir un estilo muy específico para un
+    solo elemento concreto</P>
+    <img src="img/cssenelementos.PNG" alt="Incluir css directamente en el elemento HTML" class="img">
+    <h6>Sintaxis de la definición de cada propiedad CSS</h6>
+    <img src="img/sintaxis.PNG" class="img" alt="sintaxis definición">
+    <p>Imagen tomada de: <a href="https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/CSS_basics" target="_blank">CSS_basics</a></p>
+    <hr><p class="bottom"></p>
+</div>
+</body>
+<div id="footer">
+    <footer>@copyrigth Giovanni Martinez 2020 <div class="col-lg-12"><a href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @UniversidadUNAD</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+    <a href="https://www.contadorvisitasgratis.com" title="contador de visitas"><div style="text-align: left;"><img src="https://counter5.wheredoyoucomefrom.ovh/private/contadorvisitasgratis.php?c=8x39bs4lsyffcwa478p5mnl2n7c1l5np" border="0" title="contador de visitas" alt="contador de visitas gratis"></div></a>
+    </footer>
+  </div>
+   <!-- js -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="css/bootstrap/dist/js/bootstrap.min.js"></script> <!-- scritp js -->
+  
+</script>
+  </body>
+  </html> 

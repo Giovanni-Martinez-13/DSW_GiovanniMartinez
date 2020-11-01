@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Estilos CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+  <meta dexription="Estilos internos y Externos">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+<!--   <div class="container"> -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#" style="color: #ffff">
+    <img src="img/logocss3.png" width="50" height="50" alt="CSS3" style="border-radius: 100%;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html" style="color: #ffff">Inicio <span class="sr-only">(current)</span></a>
+        </li>
+
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #ffff">
+            Conceptos
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="introduccion.html">Introducción</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="selectores.html">Selectores</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="unidades_medida.html" >Unidades de medida y colores</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="posicionamiento_visualizacion.html" >Posicionamiento y visualización</a>
+           <!-- <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="css_avanzado.html">CSS Avanzado</a>-->
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #ffff">
+            Recursos
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="multimedia.html">Multimedia</a>        
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="ejemplo.html">Ejemplo</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="bibliografia.html">Bibliografia</a>
+          </div>
+        </li>
+        
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #ffff">
+            Autoevaluación
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href=""></a>
+          </div>
+        </li>
+       <li class="nav-item">
+        <a class="nav-link" href="autor.html" style="color: #ffff">Autor</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.unad.edu.co/" target="_blanck" style="color: #ffff">
+        <div style="text-align: right;"><img src="img/logoUNAD.png"></div></a>
+        </li>
+      </ul>
+      <!-- <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+      </form> -->
+    </div>
+  </nav>
+    <div class="container">
+        <h5 class="text-primary">Selectores</h5>
+        <p>Una regla de CSS está formada por una parte llamada <span>selector</span> y otra parte llamada <span>declaración</span></p>
+        <p>La declaración indica <span>qué hay que hacer</span> y el selector indica <span>a quién hay que hacérselo</span>.
+            los selectores son imprescindibles para aplicar de forma correcta los estilos
+            CSS en una página.
+            A un mismo elemento HTML se le pueden asignar infinitas reglas CSS, es decir, una misma regla
+            puede aplicarse sobre varios selectores y cada regla CSS
+            puede aplicarse a un número infinito de elementos (mismo selector se puede utilizar en varias
+            reglas). </p>
+            <h6> Selector universal</h6>
+            <p>Se utiliza para seleccionar todos los elementos de la página y se indica mediante un asterisco. En el siguiente ejemplo se elimina
+                el margen y el relleno de todos los elementos HTML. 
+              <span> * {
+                    margin: 0;
+                    padding: 0;
+                    }</span>
+                </p>
+                <h6> Selector de tipo o etiqueta</h6>
+                <p>Selecciona todos los elementos de la página cuya etiqueta HTML coincide con el valor del selector. Ejemplo selector para la etiqueta nav,section,y aside</p>
+                <img class="img" src="img/selectorEtiqueta.PNG" alt="Selectores de etiqueta" title="Selectores de etiqueta">
+                <br>
+                <p>Ejemplo de selector a mas de una etiqueta que tiene el mismo estilo <span>h6,h5{
+                    text-align: center;
+                    padding: 5px;
+                }
+                 </span>   <!--<img src="img/selectormasdeunaEtiq.PNG" width="250" height="50">--></p>
+                 <!--Selector descendiente-->
+                <h6>Selector descendente</h6>
+            <p>Selecciona los elementos que se encuentran dentro de otros elementos. Un elemento es descendiente de otro cuando se encuentra entre las etiquetas de apertura y de cierre del otro elemento.
+                    Los selectores descendentes permiten aumentar la precisión del selector de tipo o etiqueta. Ejemplo: <span>p span  { color: red;  }
+                        h1 span { color: blue; }</span>  
+                </p>
+             <h6>Selector de clase</h6>   
+            <p>Se utiliza para aplicar estilos a un elemento especifico de la página mediante el attributo class de HTML. 
+                La principal característica de este selector es que en una misma página HTML varios elementos diferentes pueden utilizar el mismo valor en el atributo class:
+                En la siguiente imagen se creo una clase img que se encarga de centrar todas las imagenes de la página. se llama de la siguiente forma:
+                <img src="img/llamadoClase.PNG" class="img">
+            </p>
+                <img src="img/selectorClase.PNG" class="img">
+            <h6>Selectores de ID</h6>    
+             <p>El selector de ID permite seleccionar un elemento de la página a través del valor de su atributo id. 
+                 Este tipo de selectores sólo seleccionan un elemento de la página porque el valor del atributo id no se puede repetir en dos elementos diferentes de una misma página.
+                </p> 
+                <img class="img" title="Selector id" alt="Ejemplo selector id" src="img/selectorId.PNG">  
+            <hr><p class="bottom"></p>
+
+    </div>
+</body>
+<div id="footer">
+    <footer>@copyrigth Giovanni Martinez 2020 <div class="col-lg-12"><a href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @UniversidadUNAD</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+    <a href="https://www.contadorvisitasgratis.com" title="contador de visitas"><div style="text-align: left;"><img src="https://counter5.wheredoyoucomefrom.ovh/private/contadorvisitasgratis.php?c=8x39bs4lsyffcwa478p5mnl2n7c1l5np" border="0" title="contador de visitas" alt="contador de visitas gratis"></div></a>
+    </footer>
+  </div>
+   <!-- js -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="css/bootstrap/dist/js/bootstrap.min.js"></script> <!-- scritp js -->
+  
+</script>
+  </body>
+  </html> 

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Estilos CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+  <meta dexription="Estilos internos y Externos">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+<!--   <div class="container"> -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#" style="color: #ffff">
+    <img src="img/logocss3.png" width="50" height="50" alt="CSS3" style="border-radius: 100%;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html" style="color: #ffff">Inicio <span class="sr-only">(current)</span></a>
+        </li>
+
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #ffff">
+            Conceptos
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="introduccion.html">Introducción</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="selectores.html">Selectores</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="unidades_medida.html" >Unidades de medida y colores</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="posicionamiento_visualizacion.html" >Posicionamiento y visualización</a>
+           <!-- <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="css_avanzado.html">CSS Avanzado</a>-->
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #ffff">
+            Recursos
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="multimedia.html">Multimedia</a>        
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="ejemplo.html">Ejemplo</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="bibliografia.html">Bibliografia</a>
+          </div>
+        </li>
+        
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #ffff">
+            Autoevaluación
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href=""></a>
+          </div>
+        </li>
+       <li class="nav-item">
+        <a class="nav-link" href="autor.html" style="color: #ffff">Autor</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.unad.edu.co/" target="_blanck" style="color: #ffff">
+        <div style="text-align: right;"><img src="img/logoUNAD.png"></div></a>
+        </li>
+      </ul>
+      <!-- <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+      </form> -->
+    </div>
+  </nav>
+<div class="container">
+    <h5 class="text-primary">Posicionamiento</h5>
+     <h6>Posicionamiento</h6>
+<p>Los navegadores crean y posicionan de forma automática todas las cajas que forman cada página HTML.
+  CSS permite al diseñador modificar la posición en la que se muestra cada caja.</p>
+  <h6>Posicionamiento normal</h6>
+<p>Es el modelo que utilizan por defecto
+   los navegadores para mostrar los elementos de las páginas</p>
+<h6>Posicionamiento relativo</h6>
+<p>El posicionamiento relativo desplaza una caja respecto de su posición original establecida mediante el posicionamiento normal. 
+  El desplazamiento de la caja se controla con las propiedades top, right, bottom y left.</p>
+<h6>Posicionamiento absoluto</h6>
+<p> se emplea para establecer de forma exacta la posición en la que se muestra la caja de un elemento. 
+  La nueva posición de la caja se indica mediante las propiedades top, right, bottom y left</p>
+<h6>Posicionamiento fijo</h6>
+<p>La principal característica de una caja posicionada de forma fija es que su posición es inamovible dentro de la ventana del navegador. El posicionamiento fijo hace que las cajas no
+   modifiquen su posición ni aunque el usuario suba o baje la página en la ventana de su navegador.</p>
+<h6>Posicionamiento flotante</h6>
+<p>Es el más utilizado. 
+  La caja flotante deja de pertenecer al flujo normal de la página, lo que significa que el resto de cajas ocupan el lugar dejado por la caja flotante.
+  La caja flotante se posiciona lo más a la izquierda o lo más a la derecha posible de la posición en la que se encontraba originalmente.
+  Si la caja es un elemento en línea, el texto se colocará alrededor.</p>
+<h5 class="text-primary">Visualización</h5>
+<p>propiedades para controlar su visualización: display, visibility, overflow y z-index.</p>
+<h6>Propiedades display y visibility</h6>
+<p> controlan la visualización de los elementos. 
+  Las dos propiedades permiten ocultar cualquier elemento de la página. La propiedad <span>display</span> permite ocultar completamente un elemento haciendo que 
+  desaparezca de la página. Como el elemento oculto no se muestra, el resto de elementos de la página se mueven para ocupar su lugar.
+  La propiedad <span>visibility</span> permite hacer invisible un elemento, lo que significa que el navegador crea la caja del elemento pero no la muestra. 
+  En este caso, el resto de elementos de la página no modifican su posición, ya que aunque la caja no se ve, sigue ocupando sitio.
+</p>
+<h6>Relación entre display, float y position</h6>
+<p>propiedades a la misma caja</p>
+<p>Si <span>display = none</span> se ignoran las propiedades float y position y la caja no se muestra en la página.</p>
+
+<p>Si <span>position = absolute o fixed</span>, la caja se posiciona de forma absoluta, se considera que float 
+vale none y la propiedad display vale block tanto para los elementos en línea como para 
+los elementos de bloque. La posición de la caja se determina mediante el valor de 
+las propiedades top, right, bottom y left.</p>
+<p>Si float tiene un valor distinto de none, la caja se posiciona de 
+forma flotante y la propiedad display vale block tanto para los elementos en línea como 
+para los elementos de bloque.</p>
+<h6>Propiedad overflow</h6>
+<p>Se utiliza para controlar la forma en la que se visualizan los contenidos que sobresalen 
+  de sus elementos. <span>Valores: visible, hidden, scroll, auto, inherit</span></p>
+<p><span>visible:</span> el contenido no se corta y se muestra sobresaliendo la zona reservada para visualizar el elemento. Este es el comportamiento por defecto.</p>
+<p><span>hidden:</span> el contenido sobrante se oculta y sólo se visualiza la parte del contenido que cabe dentro de la zona reservada para el elemento.</p>
+<p><span>scroll:</span> solamente se visualiza el contenido que cabe dentro de la zona reservada para el elemento, pero también se muestran barras de scroll que permiten visualizar el resto del contenido.</p>
+<p> <span>auto:</span> el comportamiento depende del navegador, aunque normalmente es el mismo que la propiedad scroll.</p>
+<h6>Propiedad z-index</h6>
+<p>posiciona una caja de forma horizontal y vertical, CSS permite controlar la posición tridimensional de las cajas posicionadas, es decir, se puede indicar las cajas que se muestran delante o detrás de otras cajas
+   cuando se producen solapamientos.<span>Valores: auto, numero, inherit</span></p>
+    <hr><p class="bottom"></p>
+</div>
+</body>
+<div id="footer">
+    <footer>@copyrigth Giovanni Martinez 2020 <div class="col-lg-12"><a href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @UniversidadUNAD</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+    <a href="https://www.contadorvisitasgratis.com" title="contador de visitas"><div style="text-align: left;"><img src="https://counter5.wheredoyoucomefrom.ovh/private/contadorvisitasgratis.php?c=8x39bs4lsyffcwa478p5mnl2n7c1l5np" border="0" title="contador de visitas" alt="contador de visitas gratis"></div></a>
+    </footer>
+  </div>
+   <!-- js -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="css/bootstrap/dist/js/bootstrap.min.js"></script> <!-- scritp js -->
+  
+</script>
+  </body>
+  </html> 
